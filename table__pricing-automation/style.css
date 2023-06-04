@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+}
+
+body{
+    min-height: 100vh;
+    background: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-automation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+	width: 1030px;
+	background-color: #fff;
+	position: relative;
+}
+
+.container-automation:first-child{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.container-automation:last-child{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.square__automation{
+    width: 25%;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 206px;
+    padding: 0 20px;
+	line-height: 20px;
+	color: #191847;
+}
+
+.gray__line-automation{
+	width: 930px;
+	height: 1px;
+	background-color: #F0EFF4;
+	position: absolute;
+	top: 90px;
+	left: 51%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.first-automation-column{
+	width: 160px;
+}
+
+.first-automation{
+    padding-top: 50px;
+    position: relative;
+}
+
+.img__price-package{
+    position: absolute;
+    top: 15px;
+}
+
+@media(max-width: 1060px){
+   .container-automation{
+	width: 860px;
+	}
+	
+	.first-automation-column{
+		width: 135px;
+	}
+	
+	.gray__line-automation{
+		width: 780px;
+		left: 49%;
+	}
+}
+
+@media(max-width: 880px){
+     .container-automation{
+	width: 560px;
+	}
+	
+	.first-automation-column{
+		width: 25%;
+	}
+	
+	.gray__line-automation{
+		width: 500px;
+		left: 49%;
+	}
+	
+	.square__automation{
+		font-size: 12px;
+	}
+}
+
+@media(max-width: 590px){
+     .container-automation{
+	width: 100%;
+	}
+	
+	.gray__line-automation{
+		width: 95%;
+	}
+}
+
+@media(max-width: 550px){
+     .container-automation{
+	width: 520px;
+	}
+	
+	.elementor-4400 .elementor-element.elementor-element-73ba44b > .elementor-element-populated{
+		overflow-x: scroll;
+	}
+	
+	.gray__line-automation{
+		width: 95%;
+	}
+}

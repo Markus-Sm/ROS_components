@@ -1,0 +1,258 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-height: 0;
+	min-width: 0;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Manrope', sans-serif;
+    padding: 100px 0;
+}
+.btn__offer__nav{
+    background: linear-gradient(94.59deg, #7964E2 10.37%, #4D259B 74.79%);
+    color: #fff;
+    height: 45px;
+    width: 193px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff!important;
+}
+
+.btn__offer__nav img{
+    margin-left: 6px;
+}
+
+.container__nav__offer{
+    width: 100%;
+    padding: 68px 55px;
+}
+
+.main__offer-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row__square-navOffer{
+    width: 31%;
+    margin: 1% 1%;
+}
+
+.title__square-navOffer{
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 52px;
+    width: 380px;
+}
+
+.title__square-navOffer span{
+    background: linear-gradient(94.59deg, #7964E2 10.37%, #4D259B 74.79%);
+    -webkit-background-clip: text; /* Safari/Chrome */
+    -moz-background-clip: text; /* Firefox */
+    background-clip: text;
+    color: transparent;;
+}
+
+.row__square-navOffer{
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 30px;
+    min-height: 292px;
+    max-width: 476px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.row__square-navOfferImg{
+    width: 74px;
+    height: 68px;
+}
+
+.square-1-title-nav{
+    background: none;
+    padding: 0;
+    padding-right: 10px;
+    display: block;
+}
+
+.square-1-title-nav p{
+    margin-top: 30px;
+    margin-bottom: 0!important;
+    font-size: 18px;
+    color: #000;
+}
+
+.title__ofer__nav{
+    font-weight: 700;
+    font-size: 20px;
+    color: #5543B5;
+}
+
+@media (max-width: 1350px){
+    .title__square-navOffer{
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .square-1-title-nav p{
+        padding-bottom: 0!important;
+        margin-bottom: 0!important;
+        font-size: 16px;
+    }
+
+    .row__square-navOffer{
+        font-size: 16px;
+    }
+
+    .title__ofer__nav{
+        font-size: 18px;
+    }
+
+    .btn__offer__nav{
+        font-size: 14px;
+        width: 188px;
+        height: 43px;
+    }
+
+    .btn__offer__nav img{
+        margin-top: 4px;
+    }
+
+    .row__square-navOfferImg{
+        width: 70px;
+        height: 64px;
+    }
+
+    .container__nav__offer{
+        padding: 68px 25px;
+    }
+}
+
+@media (max-width: 1200px){
+    
+    .title__square-navOffer{
+        width: 300px;
+        font-size: 32px;
+        line-height: 44px;
+    }
+}
+
+@media (max-width: 1000px){
+    
+    .title__square-navOffer{
+        width: 300px;
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .row__square-navOffer{
+        width: 48%;
+        margin: 1% 1%;
+    }
+}
+
+@media (max-width: 800px){
+    .title__square-navOffer{
+    font-size: 32px;
+    line-height: 44px;
+    width: 270px;
+    }
+}
+
+@media (max-width: 700px){
+    .title__square-navOffer{
+    font-size: 26px;
+    line-height: 36px;
+    width: 214px;
+    }
+
+    .square-1-title-nav p{
+        font-size: 13px;
+        width: 270px;
+    }
+
+    .row__square-navOffer{
+      font-size: 13px;
+    }
+
+    .title__ofer__nav{
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .btn__offer__nav{
+        font-size: 13px;
+        font-weight: 500;
+        width: 170px;
+        height: 40px;
+    }
+
+    .btn__offer__nav img{
+       width: 12px;
+    }
+
+    .row__square-navOfferImg{
+      width: 64px;
+      height: 56px;
+    }
+
+    .container__nav__offer{
+        padding: 68px 10px;
+    }
+}
+
+@media (max-width: 550px){
+    .title__square-navOffer{
+        font-size: 20px;
+        line-height: 32px;
+        width: 160px;
+        margin: 0;
+        }
+    
+        .square-1-title-nav p{
+            font-size: 13px;
+            margin-top: 15px;
+            width: 165px;
+        }
+    
+        .row__square-navOffer{
+          font-size: 12px;
+          padding: 20px;
+        }
+    
+        .btn__offer__nav{
+            font-size: 12px;
+            font-weight: 500;
+            width: 150px;
+            height: 40px;
+        }
+    
+        .btn__offer__nav img{
+           display: none;
+        }
+    
+        .container__nav__offer{
+            padding: 68px 5px;
+        }
+
+        .square-1-title-nav{
+            margin: 0;
+            padding: 0;
+        }
+}

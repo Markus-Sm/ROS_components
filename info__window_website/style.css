@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-height: 0;
+	min-width: 0;
+}
+
+body {
+	min-height: 100vh;
+	background: rgb(238, 236, 243);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Manrope', sans-serif;
+}
+
+/* =============================================*/
+/*== POPUP TEXT INFO MULTI PAGES & ONE PAGE ====*/
+/* =============================================*/
+
+#show-dialog{
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+#dialog-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  width: 50%;
+  text-align: center;
+  opacity: 0;
+  font-size: 13px;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 8px;
+  background-color: #F4F2FB;
+
+}
+
+#dialog-box.show {
+  display: block;
+  opacity: 1;
+  animation: fade-in 0.3s ease-in-out;
+
+}
+
+
+#close-dialog{
+  width: 140px;
+  height: 40px;
+  background: linear-gradient(45deg, #8169F1 0%, #501E9C 100%);
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.text__info-window{
+  text-align: left;
+  margin-top: 10px;;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.show__info__arrowImg{
+  margin-left: 50px;
+  height: 13px;
+}
+
+
+/* =============================================*/
+/* END OF POPUP TEXT INFO MULTI PAGES & ONE PAGE*/
+/* =============================================*/
