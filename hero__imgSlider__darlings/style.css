@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/rollgates-victoria');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,18 +10,18 @@
 
 body{
     min-height: 100vh;
-    background: #ccc;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-family: "Aeroport Light", sans-serif;
+    font-weight: 300;
 }
 
 .hero__slider-darlings{
     position: relative;
     width: 100%;
-    background: #2c3e50;
+    // background: black; 
+    // background: #2c3e50;
+    background-image: url('http://serwer2294574.home.pl/klient/darlings/wordpress/wp-content/uploads/2023/06/hero-slider-1-new.png');
 }
+
 .myslider{
     height: 650px;
     display: none;
@@ -46,7 +47,14 @@ body{
 }
 
 .next{
-    right: 0;
+    right: 30px;
+}
+.prev{
+    left: 30px;
+}
+
+.prev img, .next img{
+    width: 40px;
 }
 
 .img__hero__darligs{
@@ -64,15 +72,15 @@ body{
 }
 .dot{
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: 3px solid #fff;
+    width: 10px;
+    height: 10px;
+    border: 5px solid rgba(250, 250, 250, .7);
     border-radius: 50%;
     margin: 0 10px;
     cursor: pointer;
 }
 .active, .dot:hover{
-    border-color: #3498db;
+    border-color: #fff;
 }
 
 .fade{
@@ -83,12 +91,12 @@ body{
 }
 
 @-webkit-keyframes fade{
-    from {opacity: .7}
+    from {opacity: .3}
     to {opacity: 1}
 }
 
 @keyframes fade{
-    from {opacity: .7}
+    from {opacity: .3}
     to {opacity: 1}
 }
 
@@ -107,13 +115,22 @@ body{
     letter-spacing: 2px;
     line-height: 2px;
     line-height: 35px;
-    top: 40%;
-    left: 15%;
+    top: 20%;
+    left: 20%;
     -webkit-animation-name: post;
     -webkit-animation-duration: 2s;
     animation-name: post;
     animation-duration: 2s;
     z-index: 1;
+}
+.t__s-darlings img{
+    width: 60px;
+    // filter: invert(100%); black 
+    
+}
+.second__img__title{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .t__s-darlings h1{
@@ -121,10 +138,24 @@ body{
     color: #fff;
     font-weight: 500;
     font-size: 72px;
+    width: 540px;
+    line-height: 70px;
 }
 .t__s-darlings p{
     font-size: 18px;
-    margin-top: 25px;
+    margin-top: 10px;
+}
+
+.btn__slider-d{
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-family: 'Rollgates Victoria', sans-serif;  
+    font-size: 22px;
+    color: #fff;
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    cursor: pointer;
 }
 
 .myslider img{
