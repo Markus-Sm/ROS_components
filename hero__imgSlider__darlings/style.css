@@ -17,9 +17,10 @@ body{
 .hero__slider-darlings{
     position: relative;
     width: 100%;
+    background: rgb(49,53, 49);
     // background: black; 
     // background: #2c3e50;
-    background-image: url('http://serwer2294574.home.pl/klient/darlings/wordpress/wp-content/uploads/2023/06/hero-slider-1-new.png');
+    // background-image: url('http://serwer2294574.home.pl/klient/darlings/wordpress/wp-content/uploads/2023/06/hero-slider-1-new.png');
 }
 
 .myslider{
@@ -116,7 +117,7 @@ body{
     line-height: 2px;
     line-height: 35px;
     top: 20%;
-    left: 20%;
+    left: 16%;
     -webkit-animation-name: post;
     -webkit-animation-duration: 2s;
     animation-name: post;
@@ -125,9 +126,12 @@ body{
 }
 .t__s-darlings img{
     width: 60px;
-    // filter: invert(100%); black 
-    
 }
+.t__s-darlings-2 img{
+    width: 60px;
+    filter: invert(100%); black 
+}
+
 .second__img__title{
     margin-left: 5px;
     margin-right: 5px;
@@ -146,6 +150,13 @@ body{
     margin-top: 10px;
 }
 
+.t__s-darlings-2 h1{
+    color: #000;
+}
+.t__s-darlings-2 p{
+    color: #000;
+}
+
 .btn__slider-d{
     margin-top: 20px;
     padding: 10px 25px;
@@ -156,6 +167,10 @@ body{
     outline: none;
     border: 1px solid #fff;
     cursor: pointer;
+}
+.btn__sd-2{
+    border: 1px solid #000;
+    color: #000;
 }
 
 .myslider img{
@@ -180,297 +195,137 @@ body{
     }
 }
 
-@media screen and (max-width: 800px){
-    .myslider{
-        height: 500px;
+@media screen and (max-width: 1200px){
+    .t__s-darlings h1{
+        font-size: 60px;
+        line-height: 60px;
     }
 
+    .prev img, .next img{
+        width: 30px;
+    }
+
+    .myslider{
+        height: 580px;
+    }
+}
+
+@media screen and (max-width: 1000px){
     .t__s-darlings{
-        line-height: 25px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-animation-name: posi2;
-        -webkit-animation-duration: 2s;
-        animation-name: posi2;
-        animation-duration: 2s;
+        left: 14%;
     }
 
     .t__s-darlings h1{
-        font-size: 50px;
+        font-size: 54px;
+        width: 425px;
+    }
+
+    .t__s-darlings img{
+        width: 45px;
     }
 
     .t__s-darlings p{
         font-size: 16px;
     }
 
-    @keyframes posi2{
-        from{top:35;}
-        to{top:50%;}
+    .btn__slider-d{
+        font-size: 20px;
     }
-    
-}
 
-@media screen and (max-width: 520px){
-    .t__s-darlings h1{
-        font-size: 40px;
+    .prev img, .next img{
+        width: 30px;
     }
 
     .myslider{
-        height: 300px;
+        height: 580px;
     }
-
 }
 
-/* ============================================= */
-/* ======== SLIDER 2 =========================== */
-/* ============================================= */
+@media screen and (max-width: 800px){
+    .myslider{
+        height: 500px;
+    }
 
+    .prev img, .next img{
+        width: 25px;
+    }
 
-// *{
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-//   }
-//   .slider-container{
-//     // max-width: 700px;
-//     margin: 0 auto;
-//     position: relative;
-//   }
-//   .slider{
-//     position: relative;
-//     padding-bottom: 56.25%;
-//     overflow: hidden;
-//   }
-//   .slider__item{
-//     position: absolute; top: 0; left: 0;
-//     width: 100%;
-//     height: 100%;
-//     opacity: 0;
-//     transition: opacity .3s linear;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     font-size: 30px;
-//     font-family: sans-serif;
-//   }
-//   .slider__item--current{
-//     opacity: 1;
-//     z-index: 2;
-//   }
-//   .slider__item:nth-of-type(even){
-//     background: blue;
-//     color: #fff;
-//   }
-  
-//   .controls{}
-  
-//   .controls__btn{
-//     position: absolute; top: 50%; 
-//     transform: translateY(-50%);
-//     z-index: 99;
-//     padding: 10px;
-//     position: absolute;
-//     display: inline-block;
-//     cursor: pointer;
-//   }
-//   .controls__btn--prev{
-//     left: 0;
-//   }
-//   .controls__btn--next{
-//     right: 0;
-//   }
+    .t__s-darlings h1{
+        font-size: 44px;
+        line-height: 46px;
+    }
 
-// .slider__item img{
-// position: absolute;
-// width: 100%;
-// height: 100%;
-// }
+    .t__s-darlings p{
+        font-size: 16px;
+    }
 
-/* ============================================= */
-/* ======== SLIDER 2 =========================== */
-/* ============================================= */
+        .t__s-darlings img{
+        width: 35px;
+    }
 
-// *{
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-//     min-height: 0;
-//     min-width: 0;
-// }
-
-// body{
-//     min-height: 100vh;
-//     background: #ccc;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .hero__slider-darlings{
-//     position: relative;
-//     width: 100%;
-//     background: #2c3e50;
-// }
-// .myslider{
-//     height: 650px;
-//     display: none;
-//     overflow: hidden;
-//     transition: opacity .3s linear;
-// }
-
-// .prev, .next{
-//     position: absolute;
-//     top: 50%;
-//     transform: translate(0, -50%);
-//     font-size: 50px;
-//     padding: 15px;
-//     cursor: pointer;
-//     transition: all .2s ease-in-out;
-//     user-select: none;
-// }
-
-// .prev, .next{
-//     color: #fff;
-// }
-// .prev:hover, .next:hover{
-//     color: #3498db;
-// }
-
-// .next{
-//     right: 0;
-// }
-
-// .img__hero__darligs{
-//     width: 100%;
-//     height: 100%;
-// }
-
-// .dotsbox{
-//     text-align: center;
-//     position: absolute;
-//     left: 50%;
-//     transform: translate(-50%);
-//     bottom: 20px;
-//     cursor: pointer;
-// }
-// .dot{
-//     display: inline-block;
-//     width: 15px;
-//     height: 15px;
-//     border: 3px solid #fff;
-//     border-radius: 50%;
-//     margin: 0 10px;
-//     cursor: pointer;
-// }
-// .active, .dot:hover{
-//     border-color: #3498db;
-// }
-
-// .fade{
-//     -webkit-animation-name: fade;
-//     -webkit-animation-duration: 1s;
-//     animation-name: fade;
-//     animation-duration: 1s;
-// }
-
-// @-webkit-keyframes fade{
-//     from {opacity: .3}
-//     to {opacity: 1}
-// }
-
-// @keyframes fade{
-//     from {opacity: .3}
-//     to {opacity: 1}
-// }
-
-// .t__s-darlings{
-//     position: absolute;
-//     color: #fff;
-//     letter-spacing: 2px;
-//     line-height: 2px;
-//     line-height: 35px;
-//     top: 40%;
-//     left: 15%;
-//     -webkit-animation-name: post;
-//     -webkit-animation-duration: 2s;
-//     animation-name: post;
-//     animation-duration: 2s;
-//     z-index: 1;
-// }
-
-// .t__s-darlings h1{
-//     font-family: 'Rollgates Victoria' sans-serif;
-//     color: #fff;
-//     font-weight: 500;
-//     font-size: 72px;
-// }
-// .t__s-darlings p{
-//     font-size: 18px;
-//     margin-top: 25px;
-// }
-
-// .myslider img{
-//     transform: scale(1.1, 1.1);
-//     -webkit-animation-name: zoomin;
-//     -webkit-animation-duration: 40s;
-//     animation-name: zoomin;
-//     animation-duration: 40s;
-// }
-
-// @-webkit-keyframes zoomin{
-//     from{transform: scale(1, 1);}
-//     to{
-//         transform: scale(1.2, 1.2);
-//     }
-// }
-
-// @keyframes zoomin{
-//     from{transform: scale(1, 1);}
-//     to{
-//         transform: scale(1.2, 1.2);
-//     }
-// }
-
-// @media screen and (max-width: 800px){
-//     .myslider{
-//         height: 500px;
-//     }
-
-//     .t__s-darlings{
-//         line-height: 25px;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         -webkit-animation-name: posi2;
-//         -webkit-animation-duration: 2s;
-//         animation-name: posi2;
-//         animation-duration: 2s;
-//     }
-
-//     .t__s-darlings h1{
-//         font-size: 50px;
-//     }
-
-//     .t__s-darlings p{
-//         font-size: 16px;
-//     }
-
-//     @keyframes posi2{
-//         from{top:35;}
-//         to{top:50%;}
-//     }
+        .prev{
+        left: 10px;
+    }
+    .next{
+        right: 10px;
+    }
     
-// }
+}
 
-// @media screen and (max-width: 520px){
-//     .t__s-darlings h1{
-//         font-size: 40px;
-//     }
+@media screen and (max-width: 600px){
+    .t__s-darlings h1{
+        font-size: 36px;
+        line-height: 34px;
+        width: 285px;
+    }
 
-//     .myslider{
-//         height: 300px;
-//     }
+    .myslider{
+        height: 400px;
+    }
 
-// }
+        .btn__slider-d{
+        font-size: 18px;
+    }
+
+        .prev img, .next img{
+        width: 20px;
+    }
+
+    .t__s-darlings{
+        left: 18%;
+    }
+
+    .prev{
+        left: 5px;
+    }
+    .next{
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .myslider{
+        height: 360px;
+    }
+    
+    .prev{
+        left: 5px;
+    }
+    .next{
+        right: 5px;
+    }
+
+    .t__s-darlings h1{
+        font-size: 30px;
+        line-height: 32px;
+        width: 265px;
+    }
+
+    .t__s-darlings p{
+        font-size: 16px;
+    }
+
+    .btn__slider-d{
+        font-size: 16px;
+    }
+}
