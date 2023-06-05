@@ -14,13 +14,10 @@ body{
     font-weight: 300;
 }
 
-.hero__slider-darlings{
+..hero__slider-darlings{
     position: relative;
     width: 100%;
     background: rgb(49,53, 49);
-    // background: black; 
-    // background: #2c3e50;
-    // background-image: url('http://serwer2294574.home.pl/klient/darlings/wordpress/wp-content/uploads/2023/06/hero-slider-1-new.png');
 }
 
 .myslider{
@@ -60,7 +57,7 @@ body{
 
 .img__hero__darligs{
     width: 100%;
-    height: 100%;
+    height: 100%!important;
 }
 
 .dotsbox{
@@ -129,7 +126,7 @@ body{
 }
 .t__s-darlings-2 img{
     width: 60px;
-    filter: invert(100%); black 
+    filter: invert(100%);
 }
 
 .second__img__title{
@@ -138,7 +135,7 @@ body{
 }
 
 .t__s-darlings h1{
-    font-family: 'Rollgates Victoria', sans-serif;                                            
+    font-family: 'rollgates-victoria' !important;                                           
     color: #fff;
     font-weight: 500;
     font-size: 72px;
@@ -159,15 +156,25 @@ body{
 
 .btn__slider-d{
     margin-top: 20px;
-    padding: 10px 25px;
-    font-family: 'Rollgates Victoria', sans-serif;  
+    font-family: 'rollgates-victoria' !important;
     font-size: 22px;
     color: #fff;
     background: none;
     outline: none;
     border: 1px solid #fff;
+    text-decoration: none;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
+.btn__slider__p{
+    margin: 0!important;
+    padding: 0!important;
+}
+
 .btn__sd-2{
     border: 1px solid #000;
     color: #000;
