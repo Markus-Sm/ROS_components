@@ -9,7 +9,7 @@
 }
 
 body{
-    min-height: 100vh;
+    min-height: 200vh;
     font-family: "Aeroport Light", sans-serif;
     font-weight: 300;
 }
@@ -17,7 +17,7 @@ body{
 .hero__slider-darlings{
     position: relative;
     width: 100%;
-    background: rgb(49,53, 49);
+	  background: rgb(145, 143, 126);
 }
 
 .myslider{
@@ -144,7 +144,7 @@ body{
 }
 .t__s-darlings p{
     font-size: 18px;
-    margin-top: 10px;
+	  margin-top: -10px;
 }
 
 .t__s-darlings-2 h1{
@@ -155,7 +155,7 @@ body{
 }
 
 .btn__slider-d{
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: 'rollgates-victoria' !important;
     font-size: 22px;
     color: #fff;
@@ -170,9 +170,13 @@ body{
     align-items: center;
     cursor: pointer;
 }
+.btn__slider-d:hover{
+	color: #fff;
+}
 .btn__slider__p{
     margin: 0!important;
     padding: 0!important;
+	  height: 35px;
 }
 
 .btn__sd-2{
@@ -186,7 +190,14 @@ body{
     -webkit-animation-duration: 40s;
     animation-name: zoomin;
     animation-duration: 40s;
+	  object-fit: cover;
 }
+
+/* @media(min-width: 1800px){
+	.myslider img{
+		object-fit: fill;
+	}
+} */
 
 @-webkit-keyframes zoomin{
     from{transform: scale(1, 1);}
@@ -308,6 +319,15 @@ body{
     .next{
         right: 5px;
     }
+		
+	 .btn__slider-d{
+			width: 150px;
+		 height: 35px
+	 } 
+	
+	.btn__slider__p{
+		height: 30px;
+	}
 }
 
 @media screen and (max-width: 450px){
@@ -329,10 +349,11 @@ body{
     }
 
     .t__s-darlings p{
-        font-size: 16px;
-    }
-
-    .btn__slider-d{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
+
+/* ================================================ */
+/* ==END OF SLIDER ================================ */
+/* ================================================ */
+
