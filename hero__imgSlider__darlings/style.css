@@ -14,7 +14,7 @@ body{
     font-weight: 300;
 }
 
-..hero__slider-darlings{
+.hero__slider-darlings{
     position: relative;
     width: 100%;
     background: rgb(49,53, 49);
