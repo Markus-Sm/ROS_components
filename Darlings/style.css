@@ -8,12 +8,11 @@
     min-width: 0;
 }
 
-body{
-    min-height: 100vh;
-    font-family: "Aeroport Light", sans-serif;
-    font-weight: 300;
-}
-
+// body{
+//     min-height: 100vh;
+//     font-family: "Aeroport Light", sans-serif;
+//     font-weight: 300;
+// }
 
 /* ================================================ */
 /* ====== service categories ====================== */
@@ -96,3 +95,27 @@ body{
     /* ================================================ */
     /* ====== end of service categories =============== */
     /* ================================================ */
+
+.darlings__svg-servis{
+    position: relative;
+    position: absolute;
+    // display: inline-block;
+    // vertical-align: top;
+    width: 50px;
+    height: 70px;
+    flex-shrink: 0;
+    stroke: #405861;
+    fill: none;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.darlings__svg-servis:hover{
+    stroke: pink;
+}
+
+.darlings__svg-servis svg{
+    width: 120px;
+}

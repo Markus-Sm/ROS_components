@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../interview-task"
+		},
+		{
+			"path": "../../../frokify"
+		}
+	],
+	"settings": {
+		"audioCues.diffLineDeleted": "off",
+		"audioCues.diffLineInserted": "off",
+		"audioCues.diffLineModified": "off",
+		"audioCues.lineHasBreakpoint": "off",
+		"liveServer.settings.multiRootWorkspaceName": "table-pracing"
+	}
+}
