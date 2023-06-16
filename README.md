@@ -1,1 +1,1 @@
-### Ruby on Sites components
+## Ruby on Sites components
